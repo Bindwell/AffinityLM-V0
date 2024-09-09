@@ -1,0 +1,12 @@
+smiles_can
+CC(=O)NC1CCc2cc(CCN3CCN(c4nsc5ccccc45)CC3)ccc21
+O=C(O)CCC[C@H]1CC[C@H]2[C@H](C[C@@H](O)[C@@H]2/C=C/[C@@H](O)COc2ccccc2)OC1
+NCC[C@@H](N)C(=O)N1CCCCC1
+O=C(C1=C(c2ccc(CCCOc3c(F)ccc(F)c3Cl)cc2)C[C@H]2CS(=cO)(=O)C[C@H]1N2)N(Cc1cccc(Cl)c1Cl)C1CC1
+Cc1nc(C(=O)N[C@@H](C)c2ccc(C3CN(c4ccc(OCC5CC5)cc4)C3)cc2)c(C)s1
+Cc1noc(C)c1S(=O)(=O)N(CC(=O)O)c1ccc2c(c1)OCO2
+Cc1ccc(C)c(N2CCN(Cc3nnn([C@@H](Cc4ccccc4)[C@H](Cc4ccccc4)NC(=O)OC4CCCC4)c3[Si](C)(C)C)CC2)c1
+COc1ccc(C(=O)C2C(=O)C(=O)N(Cc3ccco3)C2c2ccc(OC)cc2OC)cc1
+O=C1CCCCCN1Cc1cc(CN2CCN(c3ccccc3Oc3ccccc3)CC2)on1
+CC(C)(Oc1ccc(CCOc2ccc(/N=N/c3ccccc3)cc2)cc1)C(=O)NS(=O)(=O)c1ccc(NC(=O)Cc2ccccc2)cc1
+Cn1c(C(=O)NN2CCCCC2)nc(-c2ccccc2)c1-c1ccccc1
