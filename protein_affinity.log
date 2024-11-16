@@ -1,0 +1,121 @@
+2024-11-14 03:10:22,569 - ERROR - An error occurred: string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/PPBAT/protein-protein.py", line 412, in main
+    protein1_sequences = df['protein1_sequence'].tolist()
+                         ~~^^^^^^^^^^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-11-14 03:11:41,832 - INFO - Loading data from /Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/PPBAT/data/Data.csv
+2024-11-14 03:11:41,833 - ERROR - An error occurred: [Errno 2] No such file or directory: '/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/PPBAT/data/Data.csv'
+Traceback (most recent call last):
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/PPBAT/protein-protein.py", line 411, in main
+    df = pd.read_csv(data_path)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/PPBAT/data/Data.csv'
+2024-11-14 03:12:18,554 - INFO - Loading data from /Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/PPBAT/data/Protein-Protein-Binding-Affinity-Data/Data.csv
+2024-11-14 03:12:18,564 - INFO - Loaded 2631 protein pairs
+2024-11-14 03:12:18,565 - INFO - Initializing trainer...
+2024-11-14 03:12:19,742 - INFO - Preparing data...
+2024-11-14 03:12:19,750 - INFO - Starting training...
+2024-11-14 03:13:17,768 - INFO - Loading data from /Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/PPBAT/data/Protein-Protein-Binding-Affinity-Data/Data.csv
+2024-11-14 03:13:17,777 - INFO - Loaded 2631 protein pairs
+2024-11-14 03:13:17,777 - INFO - Initializing trainer...
+2024-11-14 03:13:18,473 - INFO - Preparing data...
+2024-11-14 03:13:18,474 - INFO - Starting training...
+2024-11-14 03:22:44,472 - ERROR - An error occurred: text input must be of type `str` (single example), `List[str]` (batch or single pretokenized example) or `List[List[str]]` (batch of pretokenized examples).
+Traceback (most recent call last):
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/PPBAT/protein-protein.py", line 463, in main
+    history = trainer.train(
+              ^^^^^^^^^^^^^^
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/PPBAT/protein-protein.py", line 264, in train
+    train_loss = self._train_epoch(train_loader, optimizer, criterion)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/PPBAT/protein-protein.py", line 306, in _train_epoch
+    p2_embeddings = self.encode_proteins(p2_seqs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/PPBAT/protein-protein.py", line 187, in encode_proteins
+    tokens = self.ankh_tokenizer([protein],
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/transformers/tokenization_utils_base.py", line 3021, in __call__
+    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/transformers/tokenization_utils_base.py", line 3081, in _call_one
+    raise ValueError(
+ValueError: text input must be of type `str` (single example), `List[str]` (batch or single pretokenized example) or `List[List[str]]` (batch of pretokenized examples).
+2024-11-14 03:26:09,238 - INFO - Loading data from /Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/PPBAT/data/Protein-Protein-Binding-Affinity-Data/Data.csv
+2024-11-14 03:26:09,253 - INFO - Loaded 2631 protein pairs
+2024-11-14 03:26:09,254 - INFO - Initializing trainer...
+2024-11-14 03:26:10,388 - INFO - Preparing data...
+2024-11-14 03:26:10,398 - INFO - Starting training...
+2024-11-14 03:54:20,909 - INFO - Evaluating model...
+2024-11-14 04:01:03,777 - INFO - Running example inference...
+2024-11-14 04:01:03,778 - ERROR - An error occurred: 'ProteinProteinAffinityTrainer' object has no attribute 'predict'
+Traceback (most recent call last):
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/PPBAT/protein-protein.py", line 521, in main
+    prediction = trainer.predict(example_p1, example_p2)
+                 ^^^^^^^^^^^^^^^
+AttributeError: 'ProteinProteinAffinityTrainer' object has no attribute 'predict'
+2024-11-14 04:06:27,018 - INFO - Loading data from /Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/PPBAT/data/Protein-Protein-Binding-Affinity-Data/Data.csv
+2024-11-14 04:06:27,030 - INFO - Loaded 2631 protein pairs
+2024-11-14 04:06:27,031 - INFO - Initializing trainer...
+2024-11-14 04:06:27,680 - INFO - Preparing data...
+2024-11-14 04:06:27,689 - INFO - Starting training...
+2024-11-14 04:07:01,756 - INFO - Loading data from /Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/PPBAT/data/Protein-Protein-Binding-Affinity-Data/Data.csv
+2024-11-14 04:07:01,764 - INFO - Loaded 2631 protein pairs
+2024-11-14 04:07:01,764 - INFO - Initializing trainer...
+2024-11-14 04:07:02,314 - INFO - Preparing data...
+2024-11-14 04:07:02,316 - INFO - Starting training...
+2024-11-14 04:32:45,908 - INFO - Loading data from /Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/PPBAT/data/Protein-Protein-Binding-Affinity-Data/Data.csv
+2024-11-14 04:32:45,926 - INFO - Loaded 2629 valid protein pairs
+2024-11-14 04:32:45,926 - INFO - 
+Training with base configuration...
+2024-11-14 04:34:02,478 - INFO - Loading data from /Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/PPBAT/data/Protein-Protein-Binding-Affinity-Data/Data.csv
+2024-11-14 04:34:02,488 - INFO - Loaded 2629 valid protein pairs
+2024-11-14 04:34:02,488 - INFO - 
+Training with base configuration...
+2024-11-14 04:36:49,921 - INFO - Evaluating model...
+2024-11-14 04:38:22,067 - INFO - Loading data from /Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/PPBAT/data/Protein-Protein-Binding-Affinity-Data/Data.csv
+2024-11-14 04:38:22,078 - INFO - Loaded 2629 valid protein pairs
+2024-11-14 04:38:22,078 - INFO - 
+Training with base configuration...
+2024-11-14 04:48:48,228 - INFO - Running example inference...
+2024-11-14 04:48:48,233 - INFO - Example prediction for protein pair:
+2024-11-14 04:48:48,240 - ERROR - An error occurred: too many indices for tensor of dimension 2
+Traceback (most recent call last):
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/PPBAT/protein-protein.py", line 528, in main
+    logger.info(f"Negative log10 affinity (M): {prediction['neg_log10_affinity_M'].item():.2f}")
+                                                ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: too many indices for tensor of dimension 2
+2024-11-14 05:59:09,797 - INFO - 
+Training with overfit configuration...
+2024-11-14 17:44:17,899 - INFO - 
+Training with underfit configuration...
+2024-11-14 23:19:24,236 - INFO - Experiment completed successfully
+2024-11-14 23:19:24,238 - INFO - 
+Results summary:
+2024-11-14 23:19:24,238 - INFO - 
+Base Configuration:
+2024-11-14 23:19:24,238 - INFO - MSE: 1.3176
+2024-11-14 23:19:24,238 - INFO - RMSE: 1.1479
+2024-11-14 23:19:24,238 - INFO - 
+Overfit Configuration:
+2024-11-14 23:19:24,238 - INFO - MSE: 1.3173
+2024-11-14 23:19:24,238 - INFO - RMSE: 1.1478
+2024-11-14 23:19:24,238 - INFO - 
+Underfit Configuration:
+2024-11-14 23:19:24,238 - INFO - MSE: 1.3180
+2024-11-14 23:19:24,238 - INFO - RMSE: 1.1481

@@ -1,0 +1,152 @@
+2024-11-13 03:11:44,821 - INFO - Initializing trainer...
+2024-11-13 03:11:45,580 - INFO - Preparing data...
+2024-11-13 03:11:45,582 - INFO - Starting training...
+2024-11-13 03:11:46,536 - ERROR - An error occurred: mat1 and mat2 shapes cannot be multiplied (2x768 and 1536x256)
+Traceback (most recent call last):
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/AffinityLM-V0/protein-protein.py", line 431, in main
+    history = trainer.train(
+              ^^^^^^^^^^^^^^
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/AffinityLM-V0/protein-protein.py", line 239, in train
+    train_loss = self._train_epoch(train_loader, optimizer, criterion)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/AffinityLM-V0/protein-protein.py", line 286, in _train_epoch
+    outputs = self.model(p1_embeddings, p2_embeddings)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/AffinityLM-V0/protein-protein.py", line 89, in forward
+    protein1_proj = self.protein_projection(protein1_embedding)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (2x768 and 1536x256)
+2024-11-13 03:13:00,051 - INFO - Initializing trainer...
+2024-11-13 03:13:00,816 - INFO - Preparing data...
+2024-11-13 03:13:00,819 - INFO - Starting training...
+2024-11-13 03:13:03,497 - ERROR - An error occurred: mat1 and mat2 shapes cannot be multiplied (2x768 and 1536x256)
+Traceback (most recent call last):
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/AffinityLM-V0/protein-protein.py", line 431, in main
+    history = trainer.train(
+              ^^^^^^^^^^^^^^
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/AffinityLM-V0/protein-protein.py", line 239, in train
+    train_loss = self._train_epoch(train_loader, optimizer, criterion)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/AffinityLM-V0/protein-protein.py", line 286, in _train_epoch
+    outputs = self.model(p1_embeddings, p2_embeddings)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/AffinityLM-V0/protein-protein.py", line 89, in forward
+    protein1_proj = self.protein_projection(protein1_embedding)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (2x768 and 1536x256)
+2024-11-13 03:16:10,631 - INFO - Initializing trainer...
+2024-11-13 03:16:11,286 - INFO - Preparing data...
+2024-11-13 03:16:11,287 - INFO - Starting training...
+2024-11-13 03:16:14,195 - ERROR - An error occurred: mat1 and mat2 shapes cannot be multiplied (2x768 and 1536x256)
+Traceback (most recent call last):
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/AffinityLM-V0/protein-protein.py", line 432, in main
+    history = trainer.train(
+              ^^^^^^^^^^^^^^
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/AffinityLM-V0/protein-protein.py", line 239, in train
+    train_loss = self._train_epoch(train_loader, optimizer, criterion)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/AffinityLM-V0/protein-protein.py", line 286, in _train_epoch
+    outputs = self.model(p1_embeddings, p2_embeddings)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/AffinityLM-V0/protein-protein.py", line 89, in forward
+    protein1_proj = self.protein_projection(protein1_embedding)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (2x768 and 1536x256)
+2024-11-13 03:18:13,721 - INFO - Initializing trainer...
+2024-11-13 03:18:13,721 - ERROR - An error occurred: 'ModelConfig' object has no attribute 'protein_embedding_dim'
+Traceback (most recent call last):
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/AffinityLM-V0/protein-protein.py", line 441, in main
+    trainer = ProteinProteinAffinityTrainer(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/AffinityLM-V0/protein-protein.py", line 162, in __init__
+    self.model = ProteinProteinAffinityLM(self.config).to(self.device)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/AffinityLM-V0/protein-protein.py", line 79, in __init__
+    config.protein_embedding_dim,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ModelConfig' object has no attribute 'protein_embedding_dim'
+2024-11-13 03:19:04,504 - INFO - Initializing trainer...
+2024-11-13 03:19:05,176 - INFO - Preparing data...
+2024-11-13 03:19:05,176 - INFO - Starting training...
+2024-11-13 03:19:10,006 - INFO - Evaluating model...
+2024-11-13 03:19:10,725 - INFO - Running example inference...
+2024-11-13 03:19:10,727 - INFO - Example prediction for protein pair: 6.52
+2024-11-13 03:19:10,727 - INFO - All outputs saved to output/20241113_031904
+2024-11-13 12:43:54,587 - INFO - Initializing trainer...
+2024-11-13 12:43:55,455 - INFO - Preparing data...
+2024-11-13 12:43:55,459 - INFO - Starting training...
+2024-11-13 12:44:16,555 - INFO - Evaluating model...
+2024-11-13 12:44:19,448 - INFO - Running example inference...
+2024-11-13 12:44:19,453 - INFO - Example prediction for protein pair: 6.77
+2024-11-13 12:44:19,454 - INFO - All outputs saved to output
+2024-11-13 15:53:01,544 - ERROR - An error occurred: name 're' is not defined
+Traceback (most recent call last):
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/AffinityLM-V0/protein-protein.py", line 458, in main
+    df = extract_pdb_kd(text)
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/AffinityLM-V0/protein-protein.py", line 21, in extract_pdb_kd
+    matches = re.finditer(pattern, text)
+              ^^
+NameError: name 're' is not defined. Did you forget to import 're'
+2024-11-13 15:53:15,776 - ERROR - An error occurred: expected str, bytes or os.PathLike object, not builtin_function_or_method
+Traceback (most recent call last):
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/AffinityLM-V0/protein-protein.py", line 459, in main
+    df = extract_pdb_kd(text)
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/miaanand/Downloads/Bindwell/Protein-Protein-Binding-Affinity/AffinityLM-V0/protein-protein.py", line 41, in extract_pdb_kd
+    pdb_path = os.path.join(dir, f"{pdb_id.lower()}.ent.pdb")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen posixpath>", line 76, in join
+TypeError: expected str, bytes or os.PathLike object, not builtin_function_or_method
+2024-11-13 15:55:22,623 - INFO - Initializing trainer...
+2024-11-13 15:55:23,241 - INFO - Preparing data...
+2024-11-13 15:55:23,243 - INFO - Starting training...
+2024-11-13 16:23:48,503 - INFO - Evaluating model...
+2024-11-13 16:29:54,859 - INFO - Running example inference...
+2024-11-13 16:29:54,861 - INFO - Example prediction for protein pair: 6.91
+2024-11-13 16:29:54,862 - INFO - All outputs saved to output

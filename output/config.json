@@ -1,0 +1,8 @@
+{
+    "input_dim": 768,
+    "embedding_dim": 256,
+    "linear_dim": 128,
+    "num_attention_layers": 3,
+    "num_heads": 4,
+    "dropout_rate": 0.1
+}
